@@ -1,0 +1,17 @@
+
+services:
+  nginx:
+    image: nginx:stable
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./www:/var/www/html
+      - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+    networks:
+      custom_net:
+        ipv4_address: 172.25.0.11
+
+networks:
+  custom_net:
+    external: true

@@ -1,0 +1,16 @@
+services:
+  phpadmin:
+    image: phpmyadmin:5.2.2
+    container_name: phpadmin
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+    networks:
+      custom_net:
+        ipv4_address: 172.25.0.13
+
+networks:
+  custom_net:
+    external: true
