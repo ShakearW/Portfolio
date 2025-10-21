@@ -20,4 +20,4 @@ volumes:
 
 networks:
   custom_net:
-    external: true
+    
