@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Prologue by HTML5 UP</title>
+		<title>Shakear's Resume</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,9 +20,9 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Jane Doe</h1>
-							<p>Hyperspace Engineer</p>
+							<span class="image avatar48"><img src="images/face.png" alt="" /></span>
+							<h1 id="title">Shakear Wilson</h1>
+							<p>Full Stack Developer</p>
 						</div>
 
 					<!-- Nav -->
@@ -60,14 +60,14 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
+								<h2 class="alt">Hello Visitor! I'm <strong>Shakear</strong>, and Welcome to this website made <br />
+								by yours truly.</h2>
+								<p>This website serves as a resume for all my work and<br />
+								the skills listed are demostrated within the website itself so have fun exploring 🗺️.</p>
 							</header>
 
 							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+								<a href="#portfolio" class="button scrolly">Explore</a>
 							</footer>
 
 						</div>
@@ -78,26 +78,24 @@
 						<div class="container">
 
 							<header>
-								<h2>Portfolio</h2>
+								<h2>My Expertise & Experience</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+							<p>This section displays tools, languages or skill sets as images, each image is interactable displaying set skill. <br/>
+							Click on the images and see where they take you or what they do, don't get lost 🧭.</p>
 
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 										<header>
-											<h3>Ipsum Feugiat</h3>
+											<h3>Docker Container/Networking Environment</h3>
 										</header>
 									</article>
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
 										<header>
-											<h3>Rhoncus Semper</h3>
+											<h3>MySQL/Database management</h3>
 										</header>
 									</article>
 								</div>
@@ -105,13 +103,13 @@
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
 										<header>
-											<h3>Magna Nullam</h3>
+											<h3>Github/Version Control/VS Code</h3>
 										</header>
 									</article>
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
 										<header>
-											<h3>Natoque Vitae</h3>
+											<h3>HTML/PHP/JavaScript/CSS/React</h3>
 										</header>
 									</article>
 								</div>
@@ -119,13 +117,13 @@
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
 										<header>
-											<h3>Dolor Penatibus</h3>
+											<h3>Server Configuration with Apache/Nginx</h3>
 										</header>
 									</article>
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
 										<header>
-											<h3>Orci Convallis</h3>
+											<h3>Senior Project</h3>
 										</header>
 									</article>
 								</div>
@@ -139,17 +137,14 @@
 						<div class="container">
 
 							<header>
-								<h2>About Me</h2>
+								<h2>Let's talk about Me 👋</h2>
 							</header>
 
 							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+							<p>Hey there! I'm Shakear, a full stack developer that's skilled in programming, application design, and debugging. I’m a reliable and adaptable with strong analytical and communication skills.
+							Passionate about creating efficient, user-focused solutions, I thrive in collaborative environments 
+							and enjoy tackling challenges with a solution-oriented mindset.</p>
 
 						</div>
 					</section>
