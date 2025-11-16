@@ -51,6 +51,18 @@ services:
     networks:
       custom_net:
         ipv4_address: 172.25.0.13
+  react:
+    build:
+     context: ./react
+     dockerfile: Dockerfile
+    container_name: react-app
+    ports:
+      - "3000:80"
+    depends_on:
+      - php     
+    networks:
+      custom_net:
+        ipv4_address: 172.25.0.14
 
 volumes:
   db_data:

@@ -1761,8 +1761,10 @@ input, select, textarea {
 		}
 
 			.image.avatar48 img {
-				width: 72px;
-				height: 72px;
+				width: 80px;
+				height: 80px;
+				margin-top: -15px;
+				margin-left: -15px;
 			}
 
 		.image.fit {
@@ -2169,7 +2171,7 @@ input, select, textarea {
 				}
 
 					#nav ul li a.active span:before {
-						color: #e27689;
+						color: #75bcef;
 					}
 
 /* Footer */
@@ -2248,7 +2250,7 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("../../images/background_intro_4.jpg");
 			}
 
 			#main > section.two {

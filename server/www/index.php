@@ -29,8 +29,9 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Experience</span></a></li>
 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#skills" id="skill-link"><span class="icon solid fa-user">Skills</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -39,14 +40,40 @@
 
 				<div class="bottom">
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+					<ul class="icons">
+    					<!-- LinkedIn -->
+    					<li>
+        					<a href="https://www.linkedin.com/in/shakear-wilson-5169502a7/" 
+           						class="icon brands fa-linkedin">
+            					<span class="label">LinkedIn</span>
+        					</a>
+    					</li>
+
+   					 	<!-- Indeed (no official icon → using briefcase icon) -->
+   					 	<li>
+        					<a href="https://profile.indeed.com/" 
+           						class="icon solid fa-briefcase">
+            					<span class="label">Indeed</span>
+        					</a>
+    					</li>
+
+    					<!-- GitHub -->			
+    					<li>
+        					<a href="https://github.com/ShakearW/Personal_Website" 
+           						class="icon brands fa-github">
+            					<span class="label">GitHub</span>
+        					</a>
+    					</li>
+
+    					<!-- Email -->
+    					<li>
+        					<a href="mailto:YOUREMAIL@example.com" 
+           						class="icon solid fa-envelope">
+            					<span class="label">Email</span>
+        					</a>
+    					</li>
+					</ul>
+
 
 				</div>
 
@@ -87,27 +114,27 @@
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/docker.png" alt="" /></a>
 										<header>
 											<h3>Docker Container/Networking Environment</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="http://localhost/wms.php" class="image fit"><img src="images/desktop-logo.png" alt="" /></a>
 										<header>
-											<h3>MySQL/Database management</h3>
+											<h3>Senior Project</h3>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<a href="https://github.com/ShakearW/Personal_Website" class="image fit"><img src="images/vs.png" alt="" /></a>
 										<header>
 											<h3>Github/Version Control/VS Code</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<a href="http://localhost:3000" class="image fit"><img src="images/react.png" alt="" /></a>
 										<header>
 											<h3>HTML/PHP/JavaScript/CSS/React</h3>
 										</header>
@@ -115,15 +142,15 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/nginx.png" alt="" /></a>
 										<header>
 											<h3>Server Configuration with Apache/Nginx</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<a href="http://localhost:8080" class="image fit"><img src="images/mysql.png" alt="" /></a>
 										<header>
-											<h3>Senior Project</h3>
+											<h3>MySQL/Database management</h3>
 										</header>
 									</article>
 								</div>
@@ -149,6 +176,37 @@
 						</div>
 					</section>
 
+					<!-- More Skills -->
+					<section id="skills" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Other Skills Used</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/banner_1.avif" alt="" /></a>
+
+							<p>Below are additional technical skills utilized in developing this website — the kinds of 
+    						behind-the-scenes abilities, like data manipulation, that aren’t obvious at first glance.</p>
+
+							<!-- Bullet list for additional skills -->
+        					<ul style="text-align:left; max-width:700px; margin:0 auto; margin-top:20px;">
+            					<li>Vite</li>
+           						<li>TypeScript</li>
+								<li>Node.js</li>
+								<li>Express.js</li>
+								<li>JWT Authenication</li>
+            					<li>REST API integration and testing</li>
+            					<li>Database optimization and query debugging</li>
+           						<li>Responsive UI design and layout adjustments</li>
+            					<li>Server configuration (Nginx, Apache, local dev environments)</li>
+            					<li>Environment setup and dependency management</li>
+            					<li>Error handling, logging, and debugging workflows</li>            					
+        					</ul>
+
+						</div>
+					</section>
+
 				<!-- Contact -->
 					<section id="contact" class="four">
 						<div class="container">
@@ -157,10 +215,10 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+							<p>Thank you for taking the time to explore my portfolio ⭐. I hope this gave you a better look 
+    						at my skills, my work, and the projects I’m passionate about. If you have any questions, 
+    						opportunities, or just want to connect, please feel free to reach out using the form below 📩.  
+    						I look forward to hearing from you — and thanks again for visiting! 🙌</p>
 
 							<form method="post" action="#">
 								<div class="row">
