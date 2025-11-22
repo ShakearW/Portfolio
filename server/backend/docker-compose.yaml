@@ -1,0 +1,17 @@
+services:
+  backend:
+    build:
+     context: ./backend
+     dockerfile: Dockerfile
+    container_name: node-backend
+    ports:
+      - "3001:80"
+    depends_on:
+      - db    
+    networks:
+      custom_net:
+        ipv4_address: 172.25.0.15
+
+networks:
+  custom_net:
+    

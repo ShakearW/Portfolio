@@ -31,7 +31,7 @@
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Experience</span></a></li>
 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#skills" id="skill-link"><span class="icon solid fa-user">Skills</span></a></li>
+								<li><a href="#skills" id="skill-link"><span class="icon solid fa-file-alt">Skills</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -49,13 +49,14 @@
         					</a>
     					</li>
 
-   					 	<!-- Indeed (no official icon → using briefcase icon) -->
+   					 	<!-- Resume -->
    					 	<li>
-        					<a href="https://profile.indeed.com/" 
-           						class="icon solid fa-briefcase">
-            					<span class="label">Indeed</span>
-        					</a>
-    					</li>
+    						<a href="/docs/Shakear_Resume.pdf" 
+       							class="icon solid fa-download" download>
+        						<span class="label">Resume</span>
+							</a>
+						</li>
+
 
     					<!-- GitHub -->			
     					<li>

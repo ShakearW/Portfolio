@@ -63,7 +63,20 @@ services:
     networks:
       custom_net:
         ipv4_address: 172.25.0.14
-
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: node-backend
+    ports:
+      - "3001:3001"
+    depends_on:
+      - db
+    networks:
+      custom_net:
+        ipv4_address: 172.25.0.15
+    env_file:
+      - ./backend/.env #Contains database_url for docker
 volumes:
   db_data:
 
