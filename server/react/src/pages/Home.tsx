@@ -1,31 +1,56 @@
-// Import the useNavigate hook from React Router (used to navigate programmatically)
-import { useNavigate } from "react-router-dom";
+// Home.tsx
 
-function Home() {
-  // Create a navigate function that lets us move to different routes in the app
-  const navigate = useNavigate();
+import "../styles/hero.css"
+import "../styles/navbar.css"
+import "../styles/sections.css"
+
+import Background from "../components/Background/Background"
+import NavBar from "../components/NavBar/NavBar"
+import Hero from "../components/Hero/Hero"
+import About from "../components/About/About"
+import Experience from "../components/Experience/Experience"
+import Skills from "../components/Skills/Skills"
+import Contact from "../components/Contact/Contact"
+
+
+// NEW: Hook to trigger fade/slide animation on scroll
+import useSectionAnimation from "../hooks/useSectionAnimation"
+
+export default function Home() {
+  // Activate animation hook
+  useSectionAnimation()
 
   return (
-    // A full-screen container with centered content and a light gray background
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-8">
-      
-      // Page title styled with large bold text
-      <h1 className="text-3xl font-bold mb-6">Home Page</h1>
+    <>
+      <Background />
+      <div className="page-root">
+        {/* Top-right nav */}
+        <NavBar />
 
-      {/* Button that navigates to the '/details' page when clicked */}
-      <button
-        // When the button is clicked, navigate to the Details route
-        onClick={() => navigate("/details")}
-        // Tailwind classes for styling: blue background, white text, rounded edges, hover effect
-        className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
-      >
-        {/* Button label with an emoji */}
-        🔍 Go to Details Page
-      </button>
+        {/* Page content */}
+        <main>
+          {/* Each section gets the .section class for animation */}
+          <div id="hero" className="section">
+            <Hero />
+          </div>
 
-    </div>
-  );
+          <div id="about" className="section">
+            <About />
+          </div>
+
+          <div id="experience" className="section">
+            <Experience />
+          </div>
+
+          <div id="skills" className="section">
+            <Skills />
+          </div>
+
+          <div id="contact" className="section">
+            <Contact />
+          </div>
+        </main>
+      </div>
+    </>
+  )
 }
-
-// Export the Home component so it can be used in other files
-export default Home;

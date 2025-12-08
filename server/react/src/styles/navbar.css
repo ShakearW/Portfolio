@@ -1,0 +1,55 @@
+/* NAV BAR BACKGROUND */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  padding: 10px 0; /* adds some height but no gap */
+  display: flex;              /* make nav a flex container */
+  justify-content: flex-end;  /* push content to the RIGHT */
+  align-items: center;
+  padding-right: 28px;        
+}
+
+/* NAV CONTENT */
+.site-nav {
+  position: fixed;
+  top: 0;      /* stick to the very top */
+  right: 20px; /* small spacing from right */
+  z-index: 1100;
+  height: 60px; /* keeps items centered vertically */
+  display: flex;
+  align-items: center;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* UL LIST */
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* BUTTON STYLING */
+.site-nav button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 14px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.95;
+}
+
+.site-nav button:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  background-color: #1db954;
+  color: #000;
+}

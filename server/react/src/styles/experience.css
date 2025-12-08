@@ -1,0 +1,92 @@
+/* Grid wrapper */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 0;
+}
+
+/* Each card */
+.experience-card {
+  background: rgba(13, 13, 13, 0.874);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  border-radius: 16px;
+  min-height: 180px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 420px;
+}
+
+/* Top buttons row */
+.card-top {
+  display: flex;
+  justify-content: space-between; /* keeps modal on far right */
+  margin-bottom: 10px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 6px; /* spacing between github + web */
+}
+
+/* Small buttons */
+.card-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card-btn:hover {
+  background: #1db954;
+  color: #000;
+  border-color: #1db954;
+}
+
+/* Text */
+.experience-card h3 {
+  margin: 8px 0 6px 0;
+  font-size: 18px;
+}
+
+.experience-card p {
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+/* Mobile responsive */
+@media (max-width: 900px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.exform {
+  color: #fff;
+  width: 105%;          /* optional: ensures full width inside container */
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Simple modal box without overlay */
+.modal-box {
+  position: fixed;
+  top: 20px;       /* or wherever you want it */
+  left: 20px;
+  background: #1db954;
+  color: #000;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+  max-width: 300px;
+  font-size: 14px;
+  opacity: 0.95;
+  transition: opacity 0.3s ease;
+}

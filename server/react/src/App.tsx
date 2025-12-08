@@ -1,23 +1,18 @@
-// Import the routing components from React Router
-import { Routes, Route } from 'react-router-dom'
-
-// Import the page components that will be shown for each route
-import Home from './pages/Home'
-import Details from './pages/Details'
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    // <Routes> is the container that holds all your route definitions
     <Routes>
-
-      {/* This route renders the Home component when the user visits "/" */}
+      {/* Scrollable homepage */}
       <Route path="/" element={<Home />} />
 
-      {/* This route renders the Details component when the user visits "/details" */}
-      <Route path="/details" element={<Details />} />
-
+      {/* Future additional pages */}
+      {/* <Route path="/details" element={<Details />} /> */}
+      {/* <Route path="/wms" element={<WMS />} /> */}
+      {/* <Route path="/docker" element={<Docker />} /> */}
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;
