@@ -1,0 +1,55 @@
+/* Background container */
+.animated-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+
+  /* Light mode default */
+  background: radial-gradient(circle at top left, #e0f2fe, transparent 55%),
+              radial-gradient(circle at bottom right, #dcfce7, transparent 55%),
+              linear-gradient(120deg, #eef2ff, #f8fafc, #ecfeff);
+}
+
+/* Floating blobs */
+.bg-blob {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.35;
+  animation: float 18s infinite ease-in-out;
+}
+
+/* Individual blobs (Light) */
+.blob-1 { background: #60a5fa; top: -120px; left: -120px; }
+.blob-2 { background: #34d399; bottom: -140px; right: -140px; animation-delay: 4s; }
+.blob-3 { background: #a78bfa; top: 40%; left: 60%; animation-delay: 8s; }
+
+/* Animation */
+@keyframes float {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(40px, -60px) scale(1.15); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+/* =========================
+   Dark Mode (auto)
+   ========================= */
+@media (prefers-color-scheme: dark) {
+  .animated-bg {
+    background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.20), transparent 60%),
+                radial-gradient(circle at bottom right, rgba(16, 185, 129, 0.18), transparent 60%),
+                linear-gradient(120deg, #060914, #0b1020, #050814);
+  }
+
+  .bg-blob {
+    opacity: 0.22; /* keep it subtle so content stays readable */
+    filter: blur(110px);
+  }
+
+  .blob-1 { background: rgba(59, 130, 246, 0.85); }
+  .blob-2 { background: rgba(16, 185, 129, 0.75); }
+  .blob-3 { background: rgba(167, 139, 250, 0.75); }
+}

@@ -1,5 +1,5 @@
 // Hero.tsx
-import hero from "../../assets/images/web_dev_hero.png"
+import hero from "../../../public/images/web_dev_hero.png"
 import "../../styles/hero.css"
 import { FaGithub, FaPaperPlane, FaWhatsapp, FaLinkedin} from "react-icons/fa";
 

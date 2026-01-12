@@ -1,5 +1,5 @@
 // NavBar.tsx
-import resumePDF from '../../assets/docs/Shakear_Resume.pdf';
+import resumePDF from '../../../public/docs/Shakear_Resume.pdf';
 
 import "../../styles/navbar.css"
 

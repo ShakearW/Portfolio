@@ -2,8 +2,6 @@ services:
   db:
     image: mysql:9.2.0
     container_name: db
-    ports:
-      - "20455:3306"
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: mydatabase
@@ -12,8 +10,7 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     networks:
-      custom_net:
-        ipv4_address: 172.25.0.12
+      - custom_net
 
 volumes:
   db_data:

@@ -1,6 +1,5 @@
 // About.tsx
-
-import face from "../../assets/images/face.png"
+import face from "../../../public/images/face.png"
 import "../../styles/sections.css"
 
 export default function About() {

@@ -1,32 +1,17 @@
 services:
-  php:
-    image: php:8.4.6-fpm
-    container_name: php
-    volumes:
-      - ./www:/var/www/html
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: node-backend
     networks:
-      custom_net:
-        ipv4_address: 172.25.0.10
-
-  nginx:
-    image: nginx:stable
-    container_name: nginx
-    ports:
-      - "80:80"
-    volumes:
-      - ./www:/var/www/html
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-    depends_on:
-      - php
-    networks:
-      custom_net:
-        ipv4_address: 172.25.0.11
+      - custom_net
+    env_file:
+      - ./backend/.env
 
   db:
     image: mysql:9.2.0
     container_name: db
-    ports:
-      - "20455:3306" #datagrip
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: mydatabase
@@ -35,54 +20,38 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     networks:
-      custom_net:
-        ipv4_address: 172.25.0.12
+      - custom_net
 
-  phpadmin:
-    image: phpmyadmin:5.2.2
-    container_name: phpadmin
-    ports:
-      - "8080:80"
-    environment:
-      PMA_HOST: db
-      PMA_PORT: 3306
-    depends_on:
-      - db
-    networks:
-      custom_net:
-        ipv4_address: 172.25.0.13
   react:
     build:
-     context: ./react
-     dockerfile: Dockerfile
+      context: ./react
+      dockerfile: Dockerfile
     container_name: react-app
     ports:
-      - "3000:80"
-    depends_on:
-      - php     
+      - "5173:5173"
+    volumes:
+      - ./react:/app
+      - /app/node_modules
+    command: ["npm", "run", "dev", "--", "--host"]
     networks:
-      custom_net:
-        ipv4_address: 172.25.0.14
-  backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
-    container_name: node-backend
+      - custom_net
+
+  nginx:
+    image: nginx:stable
+    container_name: nginx
     ports:
-      - "3001:3001"
+      - "80:80"
     depends_on:
-      - db
+      - backend
+      - react
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     networks:
-      custom_net:
-        ipv4_address: 172.25.0.15
-    env_file:
-      - ./backend/.env #Contains database_url for docker
+      - custom_net
+
 volumes:
   db_data:
 
 networks:
   custom_net:
     driver: bridge
-    ipam:
-      config:
-        - subnet: 172.25.0.0/16

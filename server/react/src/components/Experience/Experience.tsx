@@ -1,33 +1,36 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../../styles/experience.css";
 import { FaGlobe } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 import { FaInfoCircle } from "react-icons/fa";
 
 export default function Experience() {
+  const navigate = useNavigate();
   const [modalContent, setModalContent] = useState<string | null>(null); // null = modal hidden
   const items = [
     {
       title: "Senior Project — Warehouse Management",
       text: "This project is a warehouse management system which can create efficient, organized, and responsive warehouse operations. Click on the icons for information about the system.​",
-      github: "https://github.com/yourrepo",
+      github: "https://github.com/ShakearW/Personal_Website",
       website: "https://wmsproject.bcolditz.tech/",
       details: "These are the creds for the website, Username: demo PassWord: DEMOuser123#"
     },
     {
       title: "Personal Project — Bank Management System",
       text: "This is a Java based bank management system that displays data storage and data security along with backend management.",
-      github: "https://github.com/yourrepo"
+      github: "https://github.com/ShakearW"
     },
     {
       title: "Web Development",
       text: "These are pages that I have made while taking a web development course, all the pages use HTML5. Feel free to click on the icons to explore them.",
-      website: "https://example.com"
+      website: "details"
       // No links for this card
     },
     {
       title: "Frontend UI Engineering",
-      text: "Developed interactive UI components using React, TypeScript, and responsive layouts."      
+      text: "Developed interactive UI components using React, TypeScript, and responsive layouts." ,
+      website: ""     
     },
     {
       title: "Backend Development",
@@ -40,7 +43,7 @@ export default function Experience() {
   ];
   const showModal = (text: string) => {
     setModalContent(text);
-    // Automatically hide after 3 seconds
+    // Automatically hide after 6 seconds
     setTimeout(() => {
       setModalContent(null);
     }, 4000);
@@ -70,15 +73,26 @@ export default function Experience() {
                     </a>
                   )}
                   {item.website && (
-                    <a
-                      className="card-btn"
-                      href={item.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaGlobe size={25} />
-                    </a>
+                    item.website === "details" ? (
+                      <button
+                        className="card-btn"
+                        onClick={() => navigate("/extra")}
+                        title="View details"
+                      >
+                        <FaGlobe size={25} />
+                      </button>
+                    ) : (
+                      <a
+                        className="card-btn"
+                        href={item.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaGlobe size={25} />
+                      </a>
+                    )
                   )}
+
                 </div>  
                   {/* New Modal Button */}
                   {item.details && (

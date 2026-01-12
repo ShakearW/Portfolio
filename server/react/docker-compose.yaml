@@ -1,17 +1,13 @@
-services:
-  react:
+frontend:
     build:
-     context: ./react
-     dockerfile: Dockerfile
-    container_name: react-app
+      context: ./react
+      dockerfile: Dockerfile.dev
+    container_name: react-frontend
     ports:
-      - "3000:80"
-    depends_on:
-      - php    
+      - "5173:5173"
+    volumes:
+      - ./react:/app
+      - /app/node_modules
+    command: ["npm", "run", "dev"]
     networks:
-      custom_net:
-        ipv4_address: 172.25.0.14
-
-networks:
-  custom_net:
-    
+      - custom_net
