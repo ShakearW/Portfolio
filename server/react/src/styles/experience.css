@@ -2,7 +2,7 @@
 .experience-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: clamp(14px, 2vw, 25px);
   margin-top: 0;
 }
 
@@ -10,14 +10,15 @@
 .experience-card {
   background: rgba(13, 13, 13, 0.874);
   backdrop-filter: blur(8px);
-  padding: 30px;
+   padding: clamp(16px, 2.5vw, 30px);
   border-radius: 16px;
   min-height: 180px;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 420px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Top buttons row */
@@ -52,7 +53,7 @@
 /* Text */
 .experience-card h3 {
   margin: 8px 0 6px 0;
-  font-size: 18px;
+  font-size: clamp(15px, 2vw, 18px);
 }
 
 .experience-card p {
@@ -60,10 +61,27 @@
   line-height: 1.4;
 }
 
-/* Mobile responsive */
+/* Tablet: 2 columns */
 @media (max-width: 900px) {
   .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 540px) {
+  .experience-grid {
     grid-template-columns: 1fr;
+  }
+
+  .modal-box {
+    left: 12px;
+    right: 12px;
+    max-width: unset; /* full width on small screens */
+  }
+
+  .exform {
+    width: 100%;
   }
 }
 
@@ -71,22 +89,51 @@
   color: #fff;
   width: 105%;          /* optional: ensures full width inside container */
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, system-ui, sans-serif;
 }
 
 /* Simple modal box without overlay */
-.modal-box {
+.ex-modal-box {
   position: fixed;
-  top: 20px;       /* or wherever you want it */
-  left: 20px;
-  background: #1db954;
-  color: #000;
-  padding: 15px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  z-index: 1000;
-  max-width: 300px;
+  top: 80px;
+  right: 24px;
+  background: #0e0e0e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 20px 24px;
+  box-shadow: 0 0 0 1px rgba(29, 185, 84, 0.1);
+  z-index: 2000;
+  max-width: 320px;
+  width: 90%;
+}
+
+.ex-modal-box p {
   font-size: 14px;
-  opacity: 0.95;
-  transition: opacity 0.3s ease;
+  color: #fff;
+  line-height: 1.6;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.ex-modal-box-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.ex-modal-box-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1db954;
+  flex-shrink: 0;
+}
+
+.ex-modal-box-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
 }

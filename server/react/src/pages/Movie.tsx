@@ -77,7 +77,7 @@ export default function Movie() {
             </main>
 
             <footer className="movie-footer">
-              © 2025 Exam 2 – Wilson. All rights reserved.
+              © 2025 Shakear Wilson. All rights reserved.
             </footer>
           </div>
         </div>

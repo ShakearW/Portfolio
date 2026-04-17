@@ -50,6 +50,9 @@ export default function Home() {
             <Contact />
           </div>
         </main>
+        <p className="section-footer">
+            © 2026 Shakear Wilson. All rights reserved.
+        </p>
       </div>
     </>
   )

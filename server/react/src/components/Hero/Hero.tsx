@@ -26,7 +26,7 @@ export default function Hero() {
           <FaGithub />
         </a>
 
-        <a className="plane" href="mailto:youremail@example.com">
+        <a className="plane" href="mailto:officialkear@gmail.com">
           <FaPaperPlane />
         </a>
 

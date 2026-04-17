@@ -1,5 +1,5 @@
 import MiniNavBar from "../components/MiniNav/MiniNav";
-import W_Background from "../components/W_Background/W_Background";
+import Background from "../components/Background/Background";
 import Manual from "../../public/docs/User_Manual.pdf";
 import Require from "../../public/docs/requirements.pdf";
 import Specific from "../../public/docs/Specifications.pdf";
@@ -44,7 +44,7 @@ function Details() {
   return (
     <>
   <MiniNavBar />
-  <W_Background />
+  <Background />
 
   <div className="details-page page-offset">
     <div className="details-wrap">
@@ -52,9 +52,9 @@ function Details() {
       <p className="details-subtitle">Senior Capstone Project</p>
 
       <p className="details-intro">
-        This page provides an overview of my senior capstone project — a full-scale
+        This page provides an overview of my senior project in college — its a full-scale
         Warehouse Management System designed to support secure, efficient, and
-        scalable warehouse operations. Included below are system documentation,
+        scalable warehouse operations. Below are system documentation,
         technical features, and access to a live deployment of the application.
       </p>
 
@@ -62,13 +62,9 @@ function Details() {
       <div className="details-card">
         <h2 className="details-card-title">📦 System Overview</h2>
         <p className="details-body">
-          The Warehouse Management System (WMS) is a web-based application designed to
+          The Warehouse Management System (WMS) is a web-based application that supports mobile devices, designed to
           streamline warehouse operations through automation, role-based access, and
           real-time inventory tracking.
-          <br /><br />
-          The system supports inventory control, purchase order processing, returns
-          management, and reporting while maintaining a strong focus on security and
-          usability.
           <br /><br />
           Mobile-friendly QR and barcode scanning are integrated to enable fast and
           accurate product handling across warehouse environments.
@@ -123,7 +119,7 @@ function Details() {
       </div>
 
       <p className="details-footer">
-        Developed as part of a senior-level software engineering capstone project.
+          © 2026 Shakear Wilson. All rights reserved.
       </p>
     </div>
   </div>

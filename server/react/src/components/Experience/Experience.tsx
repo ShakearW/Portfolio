@@ -14,7 +14,7 @@ export default function Experience() {
       text: "This project is a warehouse management system which can create efficient, organized, and responsive warehouse operations. Click on the icons for information about the system.​",
       github: "https://github.com/ShakearW/Personal_Website",
       website: "https://wmsproject.bcolditz.tech/",
-      details: "These are the creds for the website, Username: demo PassWord: DEMOuser123#"
+      details: "UN: demo  --  PW: DEMOuser123#"
     },
     {
       title: "Personal Project — Bank Management System",
@@ -74,13 +74,13 @@ export default function Experience() {
                   )}
                   {item.website && (
                     item.website === "details" ? (
-                      <button
+                      <a
                         className="card-btn"
                         onClick={() => navigate("/extra")}
                         title="View details"
                       >
                         <FaGlobe size={25} />
-                      </button>
+                      </a>
                     ) : (
                       <a
                         className="card-btn"
@@ -112,7 +112,11 @@ export default function Experience() {
         </div>
         {/* Simple modal box */}
         {modalContent && (
-          <div className="modal-box">
+          <div className="ex-modal-box">
+            <div className="ex-modal-box-header">
+              <span className="ex-modal-box-dot"/>
+              <span className="ex-modal-box-label">Demo Credentials</span>
+            </div>
             <p>{modalContent}</p>
           </div>
         )}

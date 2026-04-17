@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import MiniNavBar from "../components/MiniNav/MiniNav";
-import W_Background from "../components/W_Background/W_Background";
+import Background from "../components/Background/Background";
 
 import "../styles/wms.css"
 // (optional) if you want home-specific tweaks later:
@@ -22,12 +22,12 @@ export default function Extra() {
       body:
         "Full-stack development, containerized environments, REST-driven workflows, and security-first implementation practices.",
       action: "View Info",
-      onClick: () => navigate("/info"),
+      onClick: () => navigate("/movie"),
     },
     {
       title: "Live Demo",
       body:
-        "Explore the deployed application experience and see the system in action with real navigation and workflows.",
+        "Explore the deployed application experience and see the system in action with real navigation and workflows.                Creds: demo  - DEMOUSER123#",
       action: "Open Dashboard",
       onClick: () => window.open("https://wmsproject.bcolditz.tech/dashboard", "_blank"),
     },
@@ -45,7 +45,7 @@ export default function Extra() {
   return (
     <>
       <MiniNavBar />
-      <W_Background />
+      <Background />
 
       <div className="details-page page-offset">
         <div className="details-wrap">
@@ -80,7 +80,7 @@ export default function Extra() {
                   <p style={{ margin: "0 0 12px", lineHeight: 1.7 }}>
                     {item.body}
                   </p>
-                  <button className="btn btn-blue" onClick={item.onClick}>
+                  <button className="btn btn-green" onClick={item.onClick}>
                     {item.action}
                   </button>
                 </div>
@@ -111,17 +111,14 @@ export default function Extra() {
             </p>
 
             <div className="details-actions" style={{ marginTop: 16 }}>
-              <button
-                className="btn btn-green"
-                onClick={() => (window.location.href = "http://localhost/index.php")}
-              >
-                Open Portfolio
+              <button className="btn btn-green" onClick={() => navigate("/")}>
+                 Back To Portfolio
               </button>
             </div>
           </div>
 
           <p className="details-footer">
-            Built with React + TypeScript • Styled with a custom design system
+            © 2026 Shakear Wilson. All rights reserved.
           </p>
         </div>
       </div>

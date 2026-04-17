@@ -19,12 +19,13 @@
   margin: 0 auto;             /* center the grid inside .contact-section */
   display: grid;
   gap: 20px;
+  
 }
 
 /* inputs */
 .contact-form input,
 .contact-form textarea {
-  width: 100%;                /* ensure inputs take the available space */
+  width: 100%;
   padding: 10px;
   border-radius: 6px;
   border: none;
@@ -32,6 +33,15 @@
   color: #fff;
   resize: vertical;
   box-sizing: border-box;
+  caret-color: #fff;
+}
+
+.contact-form textarea:focus,
+.contact-form input:focus {
+  outline: none;
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  caret-color: #fff;
 }
 
 .contact-head {
@@ -39,4 +49,12 @@
   margin-bottom: 20px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.cta-btn{
+  background: #16a34a;
+}
+
+.cta-btn:hover{
+  background: #22c55e;
 }
