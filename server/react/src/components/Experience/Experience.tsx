@@ -4,6 +4,7 @@ import "../../styles/experience.css";
 import { FaGlobe } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 import { FaInfoCircle } from "react-icons/fa";
+import {FaPaperPlane} from "react-icons/fa";
 
 export default function Experience() {
   const navigate = useNavigate();
@@ -14,23 +15,24 @@ export default function Experience() {
       text: "This project is a warehouse management system which can create efficient, organized, and responsive warehouse operations. Click on the icons for information about the system.​",
       github: "https://github.com/ShakearW/Personal_Website",
       website: "https://wmsproject.bcolditz.tech/",
-      details: "UN: demo  --  PW: DEMOuser123#"
+      details: "Username: demo  -  Password: DEMOuser123#",
+      more:"details"
     },
     {
       title: "Personal Project — Bank Management System",
-      text: "This is a Java based bank management system that displays data storage and data security along with backend management.",
-      github: "https://github.com/ShakearW"
+      text: "This is a Java based bank management system that displays data storage and security along with backend management. This project used tools like Apache Netbeans (IDE), Java and Mysql.",
+      github: "https://github.com/ShakearW/Bank_Management_System"
     },
     {
       title: "Web Development",
       text: "These are pages that I have made while taking a web development course, all the pages use HTML5. Feel free to click on the icons to explore them.",
-      website: "details"
+      website: "extra"
       // No links for this card
     },
     {
       title: "Frontend UI Engineering",
-      text: "Developed interactive UI components using React, TypeScript, and responsive layouts." ,
-      website: ""     
+      text: "Developed interactive UI components using React, TypeScript, and responsive layouts inluding this one. Check it out on GitHub." ,
+      github: "https://github.com/ShakearW/Personal_Website"     
     },
     {
       title: "Backend Development",
@@ -59,7 +61,7 @@ export default function Experience() {
             <div className="experience-card" key={index}>
               
               {/* Only show card-top if there's a link */}
-              {(item.github || item.website|| item.details) && (
+              {(item.github || item.website|| item.details || item.more ) && (
                 <div className="card-top">
                 <div className="btn-group">  
                   {item.github && (
@@ -77,7 +79,7 @@ export default function Experience() {
                       <a
                         className="card-btn"
                         onClick={() => navigate("/extra")}
-                        title="View details"
+                        title="View More"
                       >
                         <FaGlobe size={25} />
                       </a>
@@ -91,6 +93,14 @@ export default function Experience() {
                         <FaGlobe size={25} />
                       </a>
                     )
+                  )}{item.more && (
+                      <a
+                        className="card-btn"
+                        onClick={() => navigate("/details")}
+                        title="View details"
+                      >
+                        <FaPaperPlane size={25} />
+                      </a>
                   )}
 
                 </div>  

@@ -16,11 +16,7 @@ nav {
 
 /* NAV CONTENT */
 .site-mininav {
-  position: fixed;
-  top: 0;      /* stick to the very top */
-  right: 20px; /* small spacing from right */
-  z-index: 1100;
-  height: 60px; /* keeps items centered vertically */
+  height: 60px;
   display: flex;
   align-items: center;
   font-family: Inter, system-ui, sans-serif;
@@ -32,7 +28,7 @@ nav {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
 }
 

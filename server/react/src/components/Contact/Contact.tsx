@@ -54,14 +54,14 @@ export default function Contact() {
     <section id="contact" className="contact-section">
       <div className="contact-container">
         <h2 className="contact-head">Contact</h2>
-        <p className="contact-head">
+        <p className="contact-body">
           Thank you for taking the time to explore my portfolio ⭐. I hope this gave you a better
           look at my skills, my work, and the projects I'm passionate about. If you have any
           questions, opportunities, or just want to connect, first use our login and feel free to reach out via
           email down below 📩.
         </p>
         <p>
-          Login Creds: demo@portfolio.com - PassWord: demo1234
+          Login Credentials: demo@portfolio.com - PassWord: demo1234
         </p>
         <form className="contact-form" onSubmit={handleSubmit}>
           <input

@@ -1,5 +1,5 @@
 // Hero.tsx
-import hero from "../../../public/images/web_dev_hero.png"
+import hero from "../../../public/images/home.png"
 import "../../styles/hero.css"
 import { FaGithub, FaPaperPlane, FaWhatsapp, FaLinkedin} from "react-icons/fa";
 
@@ -13,10 +13,10 @@ export default function Hero() {
         </h4>
         <h1 className="hero-title">Shakear Wilson</h1>
         <p className="hero-sub">
-          This website serves as a resume for all my work and skills have fun exploring 🗺️.
+          This website was made with tools and skills used in web development 🗺️.
         </p>
         <p className="hero-career">
-          Full Stack Developer
+          Junior Full Stack Developer
         </p>
         <div className="hero-cta">
           <a className="cta-btn" href="#contact">Contact Me</a>
@@ -30,7 +30,7 @@ export default function Hero() {
           <FaPaperPlane />
         </a>
 
-        <a className="whatsapp" href="https://wa.me/15551234567" target="_blank" rel="noreferrer">
+        <a className="whatsapp" href="https://wa.me/14128556605" target="_blank" rel="noreferrer">
           <FaWhatsapp />
         </a>
 

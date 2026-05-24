@@ -18,10 +18,10 @@ export default function Extra() {
       onClick: () => navigate("/details"),
     },
     {
-      title: "Technical Focus",
+      title: "HTML 5 Static Web Page",
       body:
-        "Full-stack development, containerized environments, REST-driven workflows, and security-first implementation practices.",
-      action: "View Info",
+        "This was one of my favorite static web pages I made in Web Development, Check it out down below.",
+      action: "Static Page",
       onClick: () => navigate("/movie"),
     },
     {

@@ -51,6 +51,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.contact-body {
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family:Inter, system-ui, sans-serif;
+  font-size: x-large;
+}
+
 .cta-btn{
   background: #16a34a;
 }
