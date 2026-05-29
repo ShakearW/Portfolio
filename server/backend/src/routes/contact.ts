@@ -10,6 +10,7 @@ const router = express.Router();
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
+  family: 4,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS, // use an App Password, not your real password
@@ -56,3 +57,4 @@ router.post("/contact", authenticateToken, async (req: Request, res: Response) =
 });
 
 export default router;
+
