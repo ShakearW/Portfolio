@@ -6,4 +6,5 @@ COPY . .
 RUN npx prisma generate
 RUN npm run build
 EXPOSE 3001
-CMD ["node", "-e", "console.log('Starting...'); require('./dist/index.js');"]
+ENV CACHE_BUST=2
+CMD ["node", "dist/index.js"]
