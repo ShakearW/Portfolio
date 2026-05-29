@@ -7,6 +7,6 @@
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["src", "scripts","prisma.coonfig.ts"],
+  "include": ["src", "scripts","prisma.config.ts"],
   "exclude": ["node_modules"]
 }
