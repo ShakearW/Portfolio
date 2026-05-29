@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
   },
-});
+} as any);
 
 router.post('/contact', authenticateToken, async (req: Request, res: Response) => {
   const { name, email, message } = req.body;
@@ -41,8 +41,8 @@ router.post('/contact', authenticateToken, async (req: Request, res: Response) =
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
       replyTo: email,
-      subject: Portfolio Contact from ,
-      text: Name: \nEmail: \n\nMessage:\n,
+      subject: `Portfolio Contact from ${name}`,
+      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     });
 
     return res.status(200).json({ success: true, message: 'Message sent!' });
