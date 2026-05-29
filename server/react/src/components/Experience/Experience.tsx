@@ -13,7 +13,7 @@ export default function Experience() {
     {
       title: "Senior Project — Warehouse Management",
       text: "This project is a warehouse management system which can create efficient, organized, and responsive warehouse operations. Click on the icons for information about the system.​",
-      github: "https://github.com/ShakearW/Personal_Website",
+      github: "https://github.com/Bubbycolditz/WMS",
       website: "https://wmsproject.bcolditz.tech/",
       details: "Username: demo  -  Password: DEMOuser123#",
       more:"details"
@@ -39,8 +39,8 @@ export default function Experience() {
       text: "Designed relational database schemas and optimized SQL queries for performance. Created RESTful APIs using Express.js, routing, table configuration, and database integrations."
     },
     {
-      title: "DevOps Foundations",
-      text: "Experience with Docker, Nginx, Linux servers, and environment configuration. Docker networks and multi-container setups for local dev and staging."
+      title: "DevOps & Deployment Foundation",
+      text: "Experience with Docker, Nginx, Linux servers, and environment configuration. Docker networks and multi-container setups for local dev and staging. Along with deploying application on Railway"
     }
   ];
   const showModal = (text: string) => {

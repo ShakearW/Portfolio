@@ -1,6 +1,6 @@
 
 import { FaReact, FaNodeJs, FaPhp, FaDocker,FaJava,FaHtml5 } from "react-icons/fa";
-import { SiMysql, SiTypescript, SiExpress, SiPrisma, SiGithub, SiJavascript, SiPostman, SiCss3, SiCplusplus,SiTailwindcss } from "react-icons/si";
+import { SiMysql, SiTypescript, SiExpress, SiPrisma, SiGithub, SiJavascript, SiPostman, SiCss3, SiCplusplus,SiTailwindcss, SiRailway } from "react-icons/si";
 import "../../styles/skills.css";
 
 const skills = [
@@ -19,7 +19,8 @@ const skills = [
   { name: "CSS", icon: <SiCss3 color="#1572B6" /> },
   { name: "C++", icon: <SiCplusplus color="#00599C" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss color="#38B2AC" /> },
-  { name: "HTML 5", icon: <FaHtml5 color="#b32222ff" /> }
+  { name: "HTML 5", icon: <FaHtml5 color="#b32222ff" /> },
+  { name: "Railway", icon: <SiRailway color="rgb(243, 243, 243)" /> }
 
 ];
 
