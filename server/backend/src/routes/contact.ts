@@ -9,9 +9,10 @@ import validator from 'validator';
 const router = express.Router();
 
 const transporter = nodemailer.createTransport({
-  host: '74.125.24.108',
+  host: 'smtp.gmail.com',
   port: 587,
   secure: false,
+  family: 4,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
