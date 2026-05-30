@@ -18,7 +18,7 @@ const Background = () => {
           minHeight: 200.0,
           minWidth: 200.0,
           backgroundColor: 0x000000, // dark black/gray
-          color: 0x1db954,           // particle color (greenish neon)
+          color: 0x1d8db9,           // particle color (greenish neon)
           points: 10.0,              // density of points
           maxDistance: 25.0,         // particle connection length
           spacing: 20.0,             // distance between particles

@@ -141,6 +141,6 @@ nav.site-nav-bar {
 .site-nav button:hover {
   opacity: 1;
   transform: translateY(-2px);
-  background-color: #1db954;
+  background-color: #1d8db9;
   color: #000;
 }
