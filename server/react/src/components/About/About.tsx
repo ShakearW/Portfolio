@@ -8,12 +8,11 @@ export default function About() {
     <section id="about" className="about-section">
       <div className="about-container">
         <h2 className="formation">About Me</h2>
-        <p className="body-formation">Hey there! I'm Shakear, a full stack developer that's skilled in programming, application design,<br></br> and debugging.
-        I’m a reliable and adaptable with strong analytical and communication skills.						
+        <p className="body-formation">Hello, I’m Shakear, a junior full-stack developer with experience building and deploying responsive web applications<br></br> from front to back.
+         I work with both frontend and backend technologies to create scalable, user-focused applications with clean design and efficient functionality.				
         </p>
         <p className="body-formation">
-          Passionate about creating efficient, user-focused solutions, I thrive<br></br> in collaborative environments 
-							and enjoy tackling challenges with a solution-oriented mindset.
+          I’m reliable, adaptable, and detail-oriented, with strong analytical, problem-solving, and communication skills. 💻
         </p>
         <h4 className="formation">Education:</h4>
         <p className="body-formation">Bachelor of Science, Computer Science<br></br>

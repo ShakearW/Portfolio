@@ -49,13 +49,12 @@ function Details() {
   <div className="details-page page-offset">
     <div className="details-wrap">
       <h1 className="details-title">Warehouse Management System</h1>
-      <p className="details-subtitle">Senior Capstone Project</p>
+      <p className="details-subtitle">Senior Project</p>
 
       <p className="details-intro">
-        This page provides an overview of my senior project in college — its a full-scale
-        Warehouse Management System designed to support secure, efficient, and
-        scalable warehouse operations. Below are system documentation,
-        technical features, and access to a live deployment of the application.
+        I learned backend development with RBAC, a long with some frontend development. Learned how to call data from tables and to manipulate data to then be displayed.
+        This project also taught me about security with the use of tokens , hashed passwords and active directory authentication.
+        Below are system documentation, technical features, and access to a live deployment of the application.
       </p>
 
       

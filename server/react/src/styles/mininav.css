@@ -7,11 +7,11 @@ nav {
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(8px);
   z-index: 1000;
-  padding: 10px 0; /* adds some height but no gap */
-  display: flex;              /* make nav a flex container */
-  justify-content: flex-end;  /* push content to the RIGHT */
+  padding: 0 28px;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
-  padding-right: 28px;        
+  box-sizing: border-box;
 }
 
 /* NAV CONTENT */

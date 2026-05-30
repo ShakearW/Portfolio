@@ -40,6 +40,11 @@ export default function Extra() {
     "Docker",
     "Auth + RBAC",
     "UI/UX + Accessibility",
+    "Netbeans + Java",
+    "Deployment / Railway",
+    "PHP / Symfony",
+    "Prisma + Express.js",
+    
   ];
 
   return (
@@ -51,11 +56,11 @@ export default function Extra() {
         <div className="details-wrap">
           {/* HERO */}
           <h1 className="details-title">Shakear Wilson</h1>
-          <p className="details-subtitle">Full-Stack Developer</p>
+          <p className="details-subtitle">Junior Full-Stack Developer</p>
 
           <p className="details-intro">
-            I build clean, secure, and scalable web applications. Below you’ll find my featured
-            projects, technical strengths, and quick access to live demos and documentation.
+            These are extra pages created to further explain work and experiences that I have had, and what I have learned.
+            
           </p>
 
           
@@ -63,7 +68,7 @@ export default function Extra() {
           <div className="details-card">
             <h2 className="details-card-title">⭐ Featured</h2>
             <p className="details-card-lead">
-              A quick overview of what I’m building and what I care about as a developer.
+              A quick overview of what I’m building and what I care about as a junior developer.
             </p>
 
             <div style={{ display: "grid", gap: 16 }}>
@@ -92,7 +97,7 @@ export default function Extra() {
           <div className="details-card">
             <h2 className="details-card-title">🧠 Core Skills</h2>
             <p className="details-card-lead">
-              Strong fundamentals with a focus on real-world, production-ready implementation.
+              Always ready to learn and great technical fundamentals with a focus on developing scalable, real world, production ready applications.
             </p>
 
             <ul className="details-list">

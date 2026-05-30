@@ -13,10 +13,10 @@ export default function Hero() {
         </h4>
         <h1 className="hero-title">Shakear Wilson</h1>
         <p className="hero-sub">
-          This website was made with tools and skills used in web development 🗺️.
+          This portfolio showcases my skills in full-stack web development and UI design. 🚀
         </p>
         <p className="hero-career">
-          Junior Full Stack Developer
+          Junior Full-Stack Developer
         </p>
         <div className="hero-cta">
           <a className="cta-btn" href="#contact">Contact Me</a>
