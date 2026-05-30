@@ -68,7 +68,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #1db954;
+  background: #1d8db9;
   box-shadow: 0 0 10px rgba(29, 185, 84, 0.7);
   margin-bottom: 14px;
   animation: pulse 2s infinite;
@@ -135,7 +135,7 @@
 }
 
 .modal-field input:focus {
-  border-color: #1db954;
+  border-color: #1d8db9;
   background: rgba(29, 185, 84, 0.05);
 }
 
@@ -151,7 +151,7 @@
 /* ── SUBMIT BUTTON ── */
 .modal-submit {
   margin-top: 4px;
-  background: #1db954;
+  background: #1d8db9;
   border: none;
   border-radius: 8px;
   color: #000;
@@ -167,7 +167,7 @@
 }
 
 .modal-submit:hover:not(:disabled) {
-  background: #1ed760;
+  background: #1d91be;
   transform: translateY(-1px);
 }
 

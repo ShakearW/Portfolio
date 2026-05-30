@@ -45,9 +45,9 @@
 }
 
 .card-btn:hover {
-  background: #1db954;
+  background: #1d8db9;
   color: #000;
-  border-color: #1db954;
+  border-color: #1d8db9;
 }
 
 /* Text */
@@ -126,7 +126,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #1db954;
+  background: #1d8db9;
   flex-shrink: 0;
 }
 

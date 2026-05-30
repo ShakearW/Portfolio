@@ -39,8 +39,8 @@ nav.site-nav-bar {
 }
 
 .login-btn:hover {
-  background-color: #1db954;
-  border-color: #1db954;
+  background-color: #1d8db9;
+  border-color: #1d8db9;
   color: #000;
   transform: translateY(-2px);
 }
@@ -60,7 +60,7 @@ nav.site-nav-bar {
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background-color: #1db954;
+  background-color: #1d8db9;
   box-shadow: 0 0 0 0 rgba(29, 185, 84, 0.6);
   animation: pulse 2s infinite;
   flex-shrink: 0;
@@ -74,7 +74,7 @@ nav.site-nav-bar {
 
 /* "Active User" label — hidden by default, shown on hover */
 .active-label {
-  color: #1db954;
+  color: #1d8db9;
   font-size: 13px;
   font-family: Inter, system-ui, sans-serif;
   letter-spacing: 0.05em;

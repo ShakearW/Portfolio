@@ -46,7 +46,7 @@ nav {
 .site-mininav button:hover {
   opacity: 1;
   transform: translateY(-2px);
-  background-color: #1db954;
+  background-color: #1d8db9;
   color: #000;
 }
 
@@ -66,6 +66,6 @@ nav {
 .site-mininav a.nav-link-btn:hover {
   opacity: 1;
   transform: translateY(-2px);
-  background-color: #1db954;
+  background-color: #1d8db9;
   color: #000;
 }

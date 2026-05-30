@@ -91,10 +91,10 @@
 }
 
 .btn-green {
-  background: #22c55e;
+  background: #1d8db9;
 }
 .btn-green:hover {
-  background: #16a34a;
+  background: #1d8db9;
 }
 
 /* Sections (cards) */
@@ -164,7 +164,7 @@
 .doc-download {
   display: inline-block;
   margin-top: 10px;
-  color: #16a34a;
+  color: #1d8db9;
   font-weight: 700;
   text-decoration: none;
 }
@@ -227,6 +227,6 @@
   }
 
   .doc-download {
-    color: #16a34a;
+    color: #1c7fa7;
   }
 }
