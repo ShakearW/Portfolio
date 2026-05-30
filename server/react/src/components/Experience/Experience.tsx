@@ -20,12 +20,12 @@ export default function Experience() {
     },
     {
       title: "Personal Project — Bank Management System",
-      text: "This is a Java based bank management system that displays data storage and security along with backend management. This project used tools like Apache Netbeans (IDE), Java and Mysql. I learned how to management tables in a logic based database",
+      text: "This is a Java based bank management system that displays data storage and security along with backend management. This project used tools like Apache Netbeans (IDE), Java and Mysql. I learned how to management tables in a logic based database.",
       github: "https://github.com/ShakearW/Bank_Management_System"
     },
     {
       title: "Web Development",
-      text: "This is a basic HTML 5 web page that taught me the basics. Feel free to click on the icons to explore them.",
+      text: "There is more to this portfolio click the icon to go to those pages. These pages go more in-depth on the work its self with tools used and things that I learned.",
       website: "extra"
       // No links for this card
     },
