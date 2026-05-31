@@ -111,10 +111,20 @@ h2 {
 }
 /* Tablet */
 @media (max-width: 768px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;  /* stack children vertically */
+  }
+
+  .about-container {
+    order: 1;                /* text first */
+  }
+
   .about-image-wrapper {
-    float: none;          /* stop floating so image stacks */
+    order: 2;                /* image below text */
+    float: none;
     display: block;
-    margin: 0 auto 24px;  /* center it above text */
+    margin: 24px auto 0;     /* space above, centered */
     transform: none;
     width: clamp(140px, 45vw, 240px);
     height: clamp(140px, 45vw, 240px);
@@ -144,4 +154,3 @@ h2 {
     font-size: medium;
   }
 }
-

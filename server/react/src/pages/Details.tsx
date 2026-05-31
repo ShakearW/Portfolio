@@ -52,8 +52,8 @@ function Details() {
       <p className="details-subtitle">Senior Project</p>
 
       <p className="details-intro">
-        I learned backend development with RBAC, a long with some frontend development. Learned how to call data from tables and to manipulate data to then be displayed.
-        This project also taught me about security with the use of tokens , hashed passwords and active directory authentication.
+        I learned backend development with a RBAC based mindset, along with some frontend development. I learned how to call data from tables and also how to manipulate data to be displayed.
+        This project taught me about security with the use of tokens, hashed passwords, and active directory authentication.
         Below are system documentation, technical features, and access to a live deployment of the application.
       </p>
 
@@ -61,11 +61,11 @@ function Details() {
       <div className="details-card">
         <h2 className="details-card-title">📦 System Overview</h2>
         <p className="details-body">
-          The Warehouse Management System (WMS) is a web-based application that supports mobile devices, designed to
+          The Warehouse Management System (WMS) is a web-based application that supports mobile devices that are designed to
           streamline warehouse operations through automation, role-based access, and
           real-time inventory tracking.
           <br /><br />
-          Mobile-friendly QR and barcode scanning are integrated to enable fast and
+          This system is integrated with mobile-friendly QR and barcode scanning to enable fast and
           accurate product handling across warehouse environments.
         </p>
       </div>
