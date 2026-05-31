@@ -144,3 +144,36 @@ nav.site-nav-bar {
   background-color: #1d8db9;
   color: #000;
 }
+/* ── MOBILE: scrollable nav links ── */
+@media (max-width: 640px) {
+  nav.site-nav-bar {
+    padding: 0 0 0 16px;        /* left padding for .nav-left, right side scrolls to edge */
+    overflow: hidden;
+  }
+
+  .nav-left {
+    flex-shrink: 0;             /* keep login/user indicator from being squished */
+    padding-right: 12px;
+  }
+
+  .site-nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    gap: 0;
+    padding: 0 16px 0 0;
+    /* hide scrollbar but keep swipe working */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav button {
+    font-size: 15px;
+    padding: 14px 12px;
+  }
+}
