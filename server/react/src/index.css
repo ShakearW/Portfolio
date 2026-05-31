@@ -1,13 +1,25 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;        /* prevent horizontal scroll on mobile */
+  background: #000;          /* match your background so no white flash */
+}
+
 #hero {
-  scroll-margin-top: 0;       /* hero is at the top, no offset needed */
+  scroll-margin-top: 0;
 }
 
 #about {
-  scroll-margin-top: 60px;    /* matches your navbar height */
+  scroll-margin-top: 60px;
 }
 
 #experience {
-  scroll-margin-top: 80px;    /* a little extra if section has top padding */
+  scroll-margin-top: 80px;
 }
 
 #skills {
@@ -15,6 +27,5 @@
 }
 
 #contact {
-  scroll-margin-top: 100px;   /* maybe more if you have big padding at top */
+  scroll-margin-top: 100px;
 }
-
