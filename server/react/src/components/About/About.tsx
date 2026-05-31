@@ -9,8 +9,8 @@ export default function About() {
       <div className="about-container">
         <div className="about-text">
           <h2 className="formation">About Me</h2>
-          <p className="body-formation">Hello, I’m Shakear, a junior full-stack developer with experience building and deploying responsive <br></br> web applications from front to back.
-           I work with both frontend and backend technologies to create scalable, <br></br> user-focused applications with clean design and efficient functionality. I am reliable, adaptable, <br></br> and detail-oriented,
+          <p className="body-formation">Hello, I’m Shakear, a junior full-stack developer with experience building and deploying responsive web applications from front to back.
+           I work with both frontend and backend technologies to create scalable, user-focused applications with clean design and efficient functionality. I am reliable, adaptable, and detail-oriented,
             with strong analytical, problem-solving, and communication skills.				
           </p>
           <h4 className="formation">Education:</h4>

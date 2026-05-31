@@ -55,7 +55,7 @@ export default function Contact() {
       <div className="contact-container">
         <h2 className="contact-head">Contact</h2>
         <p className="contact-body">
-          Thank you for taking the time to explore my portfolio ⭐. I hope this gave you a better
+          Thank you for taking the time to explore my portfolio ⭐. I hope this gives you a better
           look at my skills work and experience. If you have any questions, opportunities, or just want to connect,
           first login and feel free to reach out via email down below 📩.
         </p>
