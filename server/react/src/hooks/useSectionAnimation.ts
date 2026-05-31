@@ -15,7 +15,7 @@ export default function useSectionAnimation() {
         })
       },
       {
-        threshold: 0.3, // triggers when 30% of section is visible
+        threshold: 0.1, // triggers when 30% of section is visible
       }
     )
 
