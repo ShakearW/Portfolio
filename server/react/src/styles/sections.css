@@ -59,7 +59,7 @@ h2 {
 
 /* ── ABOUT SECTION ── */
 .about-section {
-  padding: clamp(40px, 8vw, 80px) clamp(16px, 4vw, 80px); /* matches page-root side padding */
+  padding: clamp(40px, 8vw, 80px) clamp(16px, 4vw, 80px) clamp(40px, 8vw, 80px) clamp(16px, 2vw, 24px); /* tighter left, normal right */
   color: #fff;
 }
 
