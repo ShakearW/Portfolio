@@ -7,7 +7,7 @@ html, body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;        /* prevent horizontal scroll on mobile */
-  background: #000;          /* match your background so no white flash */
+  background: #000000;       /* matches Vanta backgroundColor exactly */
 }
 
 #hero {
