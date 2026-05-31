@@ -59,30 +59,41 @@ h2 {
 
 /* ── ABOUT SECTION ── */
 .about-section {
-  padding: clamp(40px, 8vw, 80px) clamp(16px, 4vw, 20px);
+  padding: clamp(40px, 8vw, 80px) clamp(16px, 4vw, 80px); /* matches page-root side padding */
   color: #fff;
 }
 
 /* about-container: text left, image right on desktop */
 .about-container {
-  max-width: 1000px;
+  max-width: 1500px;                  /* matches page-root max-width */
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  gap: clamp(20px, 4vw, 48px);
+  align-items: center;                /* vertically center image with text */
+  gap: clamp(24px, 4vw, 80px);       /* generous gap like hero */
 }
 
 .about-text {
-  flex: 1;                /* takes up remaining space */
-  min-width: 0;           /* prevents text overflow */
+  flex: 1;
+  min-width: 0;
+}
+
+.about-text h2 {
+  font-size: clamp(20px, 3vw, 36px);
+  margin-bottom: 20px;
+}
+
+.about-text p,
+.about-text h4 {
+  line-height: 1.8;
+  margin-bottom: 16px;
 }
 
 /* Image container */
 .about-image-wrapper {
   flex-shrink: 0;
-  width: clamp(180px, 25vw, 300px);
-  height: clamp(180px, 25vw, 300px);
+  width: clamp(200px, 30vw, 420px);  /* bigger, closer to hero-image-wrapper */
+  height: clamp(200px, 30vw, 420px);
 }
 
 /* Image styling + animation */
@@ -122,20 +133,20 @@ h2 {
 /* Tablet — stack image below text */
 @media (max-width: 768px) {
   .about-container {
-    flex-direction: column;   /* stack vertically */
+    flex-direction: column;
     align-items: center;
   }
 
   .about-text {
-    order: 1;                 /* text on top */
+    order: 1;
     width: 100%;
   }
 
   .about-image-wrapper {
-    order: 2;                 /* image on bottom */
-    width: clamp(140px, 45vw, 240px);
-    height: clamp(140px, 45vw, 240px);
-    margin-top: 24px;
+    order: 2;
+    width: clamp(160px, 50vw, 280px);  /* matches hero tablet sizing */
+    height: clamp(160px, 50vw, 280px);
+    margin-top: 32px;
   }
 
   .container .content {
