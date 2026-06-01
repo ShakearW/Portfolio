@@ -5,8 +5,7 @@ import { prisma } from '../lib/prisma';
 import { authenticateToken } from '../middleware/auth';
 import nodemailer from 'nodemailer';
 import validator from 'validator';
-import { Resend } from 'resend';
-const resend = new Resend(process.env.RESEND_API_KEY);
+
 
 const router = express.Router();
 
@@ -39,13 +38,13 @@ router.post('/contact', authenticateToken, async (req: Request, res: Response) =
       data: { name, email, message },
     });
 
-    await resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: process.env.EMAIL_USER!,
+    await transporter.sendMail({
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
       replyTo: email,
       subject: `Portfolio Contact from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
-    })  ;
+    });
 
     return res.status(200).json({ success: true, message: 'Message sent!' });
   } catch (err) {
