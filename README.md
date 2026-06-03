@@ -1,8 +1,8 @@
 # Portfolio Project Info
 
 A full-stack personal portfolio with a React frontend, Node.js/Express backend, MySQL database, and Nginx reverse proxy — all containerized with Docker.
-Type of Project: Individual Project
-Purpose: To get more experience with full-stack tools and development 
+- Type of Project: Individual Project
+- Purpose: To get more experience with full-stack tools and development 
 
 ---
 
